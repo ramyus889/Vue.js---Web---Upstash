@@ -47,7 +47,9 @@ const items = [
     <div class="">
       <div class="text-[14px] opacity-40 text-center">Trusted by the best teams</div>
       <div class="mt-[28px]">
-        <div class="grid grid-cols-4 gap-x-10 gap-y-6 justify-items-center">
+        <div
+          class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-x-10 gap-y-6 justify-items-center"
+        >
           <div v-for="item in items" :key="item.id" class="">
             <a
               :href="item.link"
