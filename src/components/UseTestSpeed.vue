@@ -2,7 +2,7 @@
 <template>
   <div class="flex place-content-center mt-[120px]">
     <div
-      class="flex md:flex-row flex-col max-[768px]:w-full gap-16 px-[48px] py-[26px] backdrop-blur bg-white/5 rounded-[36px]"
+      class="flex md:flex-row flex-col max-[768px]:w-full gap-16 px-[48px] py-[15px] backdrop-blur bg-white/5 rounded-[36px]"
     >
       <div class="flex flex-col items-center">
         <div class="text-[36px] text-[#34D399] font-bold">25B</div>
