@@ -8,6 +8,7 @@ const items = [
     classRounded: 'lg:rounded-l-3xl',
     useSimbol: '®*',
     useClassTag: 'text-white opacity-20 text-xl',
+    useClassHover: ['group-hover:bg-red-500 ', 'group-hover:from-red-500'],
     link: '#'
   },
   {
@@ -17,6 +18,7 @@ const items = [
     button: 'Create Index',
     useSimbol: 'NEW',
     useClassTag: 'bg-[#F97316] px-1 py-[2px] text-white rounded-lg text-[11px] ms-2 opacity-100',
+    useClassHover: ['group-hover:bg-orange-500 ', 'group-hover:from-orange-500'],
     link: '#'
   },
   {
@@ -25,6 +27,7 @@ const items = [
     description: 'Messaging for the Serverless',
     button: 'Publish Messages',
     classRounded: 'lg:rounded-r-3xl',
+    useClassHover: ['group-hover:bg-indigo-500 ', 'group-hover:from-indigo-500'],
     link: '#'
   }
 ];
@@ -45,14 +48,17 @@ const adaptive =
           v-for="item in items"
           :key="item.id"
           :class="item.classRounded"
-          class="flex flex-col items-center gap-2 backdrop-blur p-8 bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-lg w-full"
+          class="flex flex-col items-center gap-2 backdrop-blur p-8 group bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-lg w-full"
         >
           <div class="flex font-semibold items-start">
             <div class="text-white text-2xl">{{ item.title }}</div>
             <div :class="item.useClassTag" class="">{{ item.useSimbol }}</div>
           </div>
           <div class="sm:text-[17px]">{{ item.description }}</div>
-          <a href="#" class="bg-white py-2 px-5 rounded-full text-black flex gap-1 text-[17px] mt-2"
+          <a
+            href="#"
+            :class="item.useClassHover[0]"
+            class="bg-white py-2 px-5 rounded-full text-black flex gap-1 text-[17px] mt-2"
             >{{ item.button }} <img src="/arrowRightTop.svg" alt=""
           /></a>
         </div>
