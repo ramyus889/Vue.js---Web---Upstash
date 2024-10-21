@@ -52,7 +52,9 @@ const adaptive =
         class="bg-[#161618] hover:bg-green-600 border-none rounded-full py-2 px-5 text-white transition-all duration-200 font-semibold"
         >Login</a
       >
-      <UseDrawer />
+      <div class="sm:hidden">
+        <UseDrawer />
+      </div>
     </div>
   </header>
 </template>
