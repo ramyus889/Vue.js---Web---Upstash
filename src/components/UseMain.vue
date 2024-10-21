@@ -36,7 +36,7 @@ const adaptive =
   <div :class="adaptive" class="mt-[80px] flex place-content-center">
     <div class="">
       <div
-        class="lg:text-[128px] text-[74px] lg:leading-[128px] leading-[74px] font-bold text-center bg-gradient-to-r from-[#34D399] to-[#DDDE54] text-transparent bg-clip-text"
+        class="lg:text-[128px] sm:text-[74px] text-[42px] lg:leading-[128px] sm:leading-[74px] leading-[42px] font-bold text-center bg-gradient-to-r from-[#34D399] to-[#DDDE54] text-transparent bg-clip-text"
       >
         Serverless Data Platform
       </div>
@@ -51,7 +51,7 @@ const adaptive =
             <div class="text-white text-2xl">{{ item.title }}</div>
             <div :class="item.useClassTag" class="">{{ item.useSimbol }}</div>
           </div>
-          <div class="text-[17px]">{{ item.description }}</div>
+          <div class="sm:text-[17px]">{{ item.description }}</div>
           <a href="#" class="bg-white py-2 px-5 rounded-full text-black flex gap-1 text-[17px] mt-2"
             >{{ item.button }} <img src="/arrowRightTop.svg" alt=""
           /></a>
