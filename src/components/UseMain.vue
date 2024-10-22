@@ -39,7 +39,7 @@ const adaptive =
   'min-[2300px]:mx-[635px] min-[2250px]:mx-[600px] min-[2125px]:mx-[550px] min-[2050px]:mx-[500px] min-[1920px]:mx-[450px] min-[1850px]:mx-[350px] min-[1750px]:mx-[250px] min-[1450px]:mx-[200px] min-[1330px]:mx-[150px] xl:mx-[100px]';
 </script>
 <template>
-  <div :class="adaptive" class="mt-[80px] flex place-content-center">
+  <div :class="adaptive" class="mt-[150px] flex place-content-center -z-10">
     <div class="">
       <div
         data-aos="fade-up"

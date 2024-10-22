@@ -51,7 +51,7 @@ const items = [
 ];
 </script>
 <template>
-  <div class="flex place-content-center mt-[80px]">
+  <div class="flex place-content-center mt-[80px] -z-10">
     <div class="">
       <div class="text-[14px] opacity-40 text-center">Trusted by the best teams</div>
       <div class="mt-[28px]">
