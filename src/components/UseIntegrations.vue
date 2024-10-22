@@ -2,6 +2,7 @@
 const items = [
   {
     id: 1,
+    delay: 100,
     title: 'Redis JS SDK',
     link: 'https://github.com/upstash/redis-js',
     descriptions: 'HTTP based Redis client for edge and serverless runtimes.',
@@ -12,6 +13,7 @@ const items = [
   },
   {
     id: 2,
+    delay: 150,
     title: 'QStash SDK',
     link: 'https://github.com/upstash/qstash-js',
     descriptions: 'HTTP based SDK for QStash and serverless runtimes.',
@@ -22,6 +24,7 @@ const items = [
   },
   {
     id: 3,
+    delay: 200,
     title: 'Edge flags',
     link: 'https://github.com/upstash/edge-flags',
     descriptions: 'Feature flags with Redis at edge and serverless runtimes.',
@@ -32,6 +35,7 @@ const items = [
   },
   {
     id: 4,
+    delay: 250,
     title: 'Rate limiting',
     link: 'https://github.com/upstash/ratelimit-js',
     descriptions: 'Protect your serverless functions with Redis rate limiting.',
@@ -42,6 +46,7 @@ const items = [
   },
   {
     id: 5,
+    delay: 300,
     title: 'Claps',
     link: 'https://github.com/upstash/claps',
     descriptions: 'Add a claps button to your website backed by Upstash Redis.',
@@ -52,6 +57,7 @@ const items = [
   },
   {
     id: 6,
+    delay: 350,
     title: 'Roadmap',
     link: 'https://github.com/upstash/roadmap',
     descriptions: 'Build and deploy a roadmap app for your project/product.',
@@ -62,6 +68,7 @@ const items = [
   },
   {
     id: 7,
+    delay: 400,
     title: 'Fly',
     link: 'https://fly.io/docs/upstash/redis/',
     descriptions: 'Global Redis replicated in 20+ regions of Fly.io',
@@ -72,6 +79,7 @@ const items = [
   },
   {
     id: 8,
+    delay: 450,
     title: 'Vercel KV',
     link: 'https://vercel.com/docs/storage/vercel-kv',
     descriptions: 'Durable and Global Redis with Vercel experience.',
@@ -87,11 +95,17 @@ const items = [
     <div class="">
       <div class="flex flex-col items-center text-center">
         <div
+          data-aos="fade-up"
+          data-aos-delay="100"
           class="lg:text-[60px] sm:text-[40px] text-[30px] lg:leading-[60px] sm:leading-[40px] leading-[33px] font-bold text-white"
         >
           Open Source & Integrations
         </div>
-        <div class="lg:text-[24px] sm:text-[20px] text-[17px] font-semibold">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="lg:text-[24px] sm:text-[20px] text-[17px] font-semibold"
+        >
           Tools and integrations to simplify developers' lives
         </div>
       </div>
@@ -100,6 +114,8 @@ const items = [
           :href="item.link"
           v-for="item in items"
           :key="item.id"
+          data-aos="fade-up"
+          :data-aos-delay="item.delay"
           target="_blank"
           class="p-[32px] backdrop-blur cursor-pointer bg-white/5 rounded-3xl transition hover:scale-[1.02] group hover:bg-white/10"
         >

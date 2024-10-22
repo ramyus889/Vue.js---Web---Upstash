@@ -6,6 +6,7 @@ const items = [
     image: '/blog.svg',
     text: 'Read the latest news and product updates from the Upstash Blog.',
     buttonText: 'Read',
+    delay: 100,
     rounded: 'xl:rounded-l-3xl rounded-lg',
     link: '#'
   },
@@ -15,6 +16,7 @@ const items = [
     image: '/discord.svg',
     text: 'Join our Discord community to chat with other developers and the Upstash team.',
     buttonText: 'Join',
+    delay: 200,
     rounded: 'rounded-lg',
     link: 'https://discord.gg/3q8p3k9'
   },
@@ -24,6 +26,7 @@ const items = [
     image: '/twitter.svg',
     text: 'Follow us on Twitter to stay up to date with the latest news from Upstash.',
     buttonText: 'Follow',
+    delay: 300,
     rounded: 'rounded-lg',
     link: 'https://twitter.com/upstash'
   },
@@ -33,6 +36,7 @@ const items = [
     image: '/github.svg',
     text: 'You can view all the projects we have developed as open source on our Github page.',
     buttonText: 'View',
+    delay: 400,
     rounded: 'xl:rounded-r-3xl rounded-lg',
     link: 'https://github.com/upstash'
   }
@@ -42,13 +46,19 @@ const items = [
   <div class="flex place-content-center mt-[225px]">
     <div class="">
       <div class="flex flex-col items-center text-center">
-        <div class="text-[60px] font-bold text-white">Community</div>
-        <div class="text-[24px] font-semibold">The help you need, when you need it</div>
+        <div data-aos="fade-up" data-aos-delay="100" class="text-[60px] font-bold text-white">
+          Community
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" class="text-[24px] font-semibold">
+          The help you need, when you need it
+        </div>
       </div>
       <div class="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-[5px] mt-[80px]">
         <div
           v-for="item in items"
           :key="item.id"
+          data-aos="fade-up"
+          :data-aos-delay="item.delay"
           :class="item.rounded"
           class="flex flex-col p-[32px] group text-white items-center transition bg-white/5 hover:scale-[1.02] hover:bg-white/10"
         >

@@ -7,6 +7,7 @@ const items = [
     button: 'Create Database',
     classRounded: 'lg:rounded-l-3xl',
     useSimbol: '®*',
+    delay: 100,
     useClassTag: 'text-white opacity-20 text-xl',
     useClassHover: ['group-hover:bg-red-500 ', 'group-hover:from-red-500'],
     link: '#'
@@ -17,6 +18,7 @@ const items = [
     description: 'Serverless Vector Database',
     button: 'Create Index',
     useSimbol: 'NEW',
+    delay: 200,
     useClassTag: 'bg-[#F97316] px-1 py-[2px] text-white rounded-lg text-[11px] ms-2 opacity-100',
     useClassHover: ['group-hover:bg-orange-500 ', 'group-hover:from-orange-500'],
     link: '#'
@@ -26,6 +28,7 @@ const items = [
     title: 'QStash',
     description: 'Messaging for the Serverless',
     button: 'Publish Messages',
+    delay: 300,
     classRounded: 'lg:rounded-r-3xl',
     useClassHover: ['group-hover:bg-indigo-500 ', 'group-hover:from-indigo-500'],
     link: '#'
@@ -39,6 +42,8 @@ const adaptive =
   <div :class="adaptive" class="mt-[80px] flex place-content-center">
     <div class="">
       <div
+        data-aos="fade-up"
+        data-aos-delay="100"
         class="lg:text-[128px] sm:text-[74px] text-[42px] lg:leading-[128px] sm:leading-[74px] leading-[42px] font-bold text-center bg-gradient-to-r from-[#34D399] to-[#DDDE54] text-transparent bg-clip-text"
       >
         Serverless Data Platform
@@ -48,6 +53,8 @@ const adaptive =
           v-for="item in items"
           :key="item.id"
           :class="item.classRounded"
+          data-aos="fade-up"
+          :data-aos-delay="item.delay"
           class="flex flex-col items-center gap-2 backdrop-blur p-8 group bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-lg w-full"
         >
           <div class="flex font-semibold items-start">

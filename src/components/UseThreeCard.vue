@@ -6,6 +6,7 @@ const items = [
     image: '/redisAPI.svg',
     textColor: 'text-[#FCA5A5]',
     bgColor: 'bg-[#FCA5A5]',
+    delay: 100,
     descriptions1: 'Durable and fast with multi tier storage.',
     descriptions2: 'Fast anywhere with global replication.',
     descriptions3: 'Designed for Edge/Serverless with REST API.'
@@ -16,6 +17,7 @@ const items = [
     image: '/vector.svg',
     textColor: 'text-[#FDBA74]',
     bgColor: 'bg-[#FDBA74]',
+    delay: 200,
     descriptions1: 'Serverless, price scales to zero',
     descriptions2: 'Optimized for vector search',
     descriptions3: 'Scales up to billion vectors'
@@ -26,6 +28,7 @@ const items = [
     image: '/QStash.svg',
     textColor: 'text-[#D8B4FE]',
     bgColor: 'bg-[#D8B4FE]',
+    delay: 300,
     descriptions1: 'Serverless, HTTP based messaging',
     descriptions2: 'Scheduling via CRON',
     descriptions3: 'At-least-once delivery with auto retries'
@@ -36,14 +39,20 @@ const items = [
   <div class="flex place-content-center">
     <div class="">
       <div class="flex flex-col items-center mt-[224px]">
-        <div class="text-[60px] font-bold text-white">Products</div>
-        <div class="text-[24px] font-semibold">True serverless data platform</div>
+        <div data-aos="fade-up" data-aos-delay="100" class="text-[60px] font-bold text-white">
+          Products
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" class="text-[24px] font-semibold">
+          True serverless data platform
+        </div>
       </div>
       <div class="">
         <div class="grid min-[1360px]:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-5 mt-[80px]">
           <div
             v-for="item in items"
             :key="item.id"
+            data-aos="fade-up"
+            :data-aos-delay="item.delay"
             class="flex flex-col gap-5 p-[32px] backdrop-blur bg-red-200/5 rounded-[36px]"
           >
             <div class=""><img :src="item.image" alt="" /></div>
