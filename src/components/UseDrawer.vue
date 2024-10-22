@@ -1,6 +1,6 @@
 <template>
   <div class="card flex justify-center">
-    <Drawer v-model:visible="visible" position="right" header="Drawer">
+    <Drawer v-model:visible="visible" position="right" header="upstash">
       <div class="flex flex-col gap-3">
         <div v-for="item in items" :key="item.id" class="">
           <RouterLink
