@@ -50,13 +50,13 @@ const items = [
             <div class="text-[24px] font-bold text-white">{{ item.title }}</div>
             <ul class="flex flex-col gap-2 text-[17px]">
               <li :class="item.textColor" class="flex gap-1">
-                <img src="/check.svg" class="text-white" alt="" /> {{ item.descriptions1 }}
+                <img src="/check.svg" class="w-[24px]" alt="" /> {{ item.descriptions1 }}
               </li>
               <li :class="item.textColor" class="flex gap-1">
-                <img src="/check.svg" alt="" /> {{ item.descriptions2 }}
+                <img src="/check.svg" class="w-[24px]" alt="" /> {{ item.descriptions2 }}
               </li>
               <li :class="item.textColor" class="flex gap-1">
-                <img src="/check.svg" alt="" /> {{ item.descriptions3 }}
+                <img src="/check.svg" class="w-[24px]" alt="" /> {{ item.descriptions3 }}
               </li>
             </ul>
             <div class="flex gap-4 mt-[24px] text-[17px]">

@@ -1,4 +1,6 @@
 <script setup>
+import UseCommunity from './UseCommunity.vue';
+import UseIntegrations from './UseIntegrations.vue';
 import UseLogoTeams from './UseLogoTeams.vue';
 import UseMain from './UseMain.vue';
 import UseTestSpeed from './UseTestSpeed.vue';
@@ -10,5 +12,7 @@ import UseThreeCard from './UseThreeCard.vue';
     <UseLogoTeams />
     <UseTestSpeed />
     <UseThreeCard />
+    <UseIntegrations />
+    <UseCommunity />
   </div>
 </template>
