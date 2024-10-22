@@ -1,5 +1,6 @@
 <script setup>
 import UseCommunity from './UseCommunity.vue';
+import UseFooter from './UseFooter.vue';
 import UseIntegrations from './UseIntegrations.vue';
 import UseLogoTeams from './UseLogoTeams.vue';
 import UseMain from './UseMain.vue';
@@ -14,5 +15,6 @@ import UseThreeCard from './UseThreeCard.vue';
     <UseThreeCard />
     <UseIntegrations />
     <UseCommunity />
+    <UseFooter />
   </div>
 </template>
