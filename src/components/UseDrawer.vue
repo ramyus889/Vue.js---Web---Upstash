@@ -26,8 +26,13 @@ const visible = ref(false);
 const items = [
   {
     id: 1,
+    name: 'Home',
+    link: '/'
+  },
+  {
+    id: 12,
     name: 'Pricing',
-    link: '#'
+    link: '/Pricing'
   },
   {
     id: 2,

@@ -5,7 +5,7 @@ const items = [
   {
     id: 1,
     name: 'Pricing',
-    link: '#'
+    link: '/Pricing'
   },
   {
     id: 2,
@@ -33,13 +33,13 @@ const adaptive =
   'min-[2300px]:mx-[570px] min-[2250px]:mx-[600px] min-[2125px]:mx-[550px] min-[2050px]:mx-[500px] min-[1920px]:mx-[450px] min-[1850px]:mx-[350px] min-[1750px]:mx-[250px] min-[1450px]:mx-[200px] min-[1330px]:mx-[150px] xl:mx-[100px]';
 </script>
 <template>
-  <div class="fixed top-0 left-0 right-0 z-10">
+  <div class="fixed top-0 left-0 right-0 z-10 bg-zinc-950/80 backdrop-blur">
     <header
       :class="adaptive"
-      class="flex justify-between items-center bg-zinc-950/80 backdrop-blur py-[25px] px-5 border-b-white/5"
+      class="flex justify-between items-center px-5 py-[25px] border-b-white/5"
     >
       <div class="">
-        <a href="#"><img src="/upstash.svg" alt="" /></a>
+        <RouterLink to="/"><img src="/upstash.svg" alt="" /></RouterLink>
       </div>
       <div class="sm:flex hidden">
         <div v-for="item in items" :key="item.id" class="">
