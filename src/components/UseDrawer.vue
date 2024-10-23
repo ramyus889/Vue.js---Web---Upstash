@@ -36,18 +36,18 @@ const items = [
   },
   {
     id: 2,
-    name: 'Docs',
-    link: '#'
+    name: 'Customers',
+    link: '/Customers'
   },
   {
     id: 3,
-    name: 'Blog',
-    link: '#'
+    name: 'Careers',
+    link: '/Careers'
   },
   {
     id: 4,
     name: 'About',
-    link: '#'
+    link: '/About'
   },
   {
     id: 5,

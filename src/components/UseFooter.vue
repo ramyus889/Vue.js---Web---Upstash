@@ -4,10 +4,10 @@
     <div class="">
       <div class="flex flex-col items-center text-center">
         <div class=""><img src="/upstash.svg" class="w-[100px]" alt="" /></div>
-        <div class="text-white opacity-60 mt-10 text-[16px]">
+        <div class="text-white opacity-60 mt-10 text-[17px]">
           © 2024 Upstash, Inc. Based in California.
         </div>
-        <div class="flex flex-wrap place-content-center gap-4 text-[16px] mt-[8px]">
+        <div class="flex flex-wrap place-content-center gap-4 text-[17px] mt-[8px]">
           <a href="#" class="flex items-center hover:text-[#34D399] hover:underline">
             Contact Us
             <svg

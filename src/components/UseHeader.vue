@@ -9,18 +9,18 @@ const items = [
   },
   {
     id: 2,
-    name: 'Docs',
-    link: '#'
+    name: 'Customers',
+    link: '/Customers'
   },
   {
     id: 3,
-    name: 'Blog',
-    link: '#'
+    name: 'Careers',
+    link: '/Careers'
   },
   {
     id: 4,
     name: 'About',
-    link: '#'
+    link: '/About'
   },
   {
     id: 5,
@@ -41,7 +41,7 @@ const adaptive =
       <div class="">
         <RouterLink to="/"><img src="/upstash.svg" alt="" /></RouterLink>
       </div>
-      <div class="sm:flex hidden">
+      <div class="md:flex hidden">
         <div v-for="item in items" :key="item.id" class="">
           <RouterLink
             :to="item.link"
@@ -56,7 +56,7 @@ const adaptive =
           class="bg-[#161618] hover:bg-green-600 border-none rounded-full py-2 px-5 text-white transition-all duration-200 font-semibold"
           >Login</a
         >
-        <div class="sm:hidden">
+        <div class="md:hidden">
           <UseDrawer />
         </div>
       </div>
