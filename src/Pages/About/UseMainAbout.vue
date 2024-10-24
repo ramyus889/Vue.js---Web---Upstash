@@ -1,6 +1,4 @@
 <script setup>
-import UseFooter from '@/components/UseFooter.vue';
-
 const items = [
   {
     id: 1,
@@ -222,8 +220,5 @@ const itemsInvest = [
         </div>
       </div>
     </div>
-  </div>
-  <div class="">
-    <UseFooter />
   </div>
 </template>
