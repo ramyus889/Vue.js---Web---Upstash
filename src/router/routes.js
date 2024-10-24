@@ -1,4 +1,5 @@
 import UseHome from '@/components/UseHome.vue';
+import UseHomeAbout from '@/Pages/About/UseHomeAbout.vue';
 import UseCloudSRE from '@/Pages/Careers/components/UseCloudSRE.vue';
 import UseCore from '@/Pages/Careers/components/UseCore.vue';
 import UseDevRel from '@/Pages/Careers/components/UseDevRel.vue';
@@ -32,6 +33,10 @@ export const routes = [
   {
     path: '/Careers',
     component: UseHomeCareers
+  },
+  {
+    path: '/About',
+    component: UseHomeAbout
   },
   {
     path: '/useZapier',

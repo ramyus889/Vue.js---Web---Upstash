@@ -47,7 +47,7 @@ const items = [
   {
     id: 4,
     name: 'About',
-    link: '#'
+    link: '/About'
   },
   {
     id: 5,
