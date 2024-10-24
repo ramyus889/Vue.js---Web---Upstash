@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="flex place-content-center mt-[210px]">
+  <div class="flex place-content-center mt-[210px] px-5">
     <div class="">
       <div class="flex flex-col items-center text-center">
         <div class=""><img src="/upstash.svg" class="w-[100px]" alt="" /></div>

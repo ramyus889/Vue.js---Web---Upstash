@@ -1,4 +1,10 @@
 import UseHome from '@/components/UseHome.vue';
+import UseCloudSRE from '@/Pages/Careers/components/UseCloudSRE.vue';
+import UseCore from '@/Pages/Careers/components/UseCore.vue';
+import UseDevRel from '@/Pages/Careers/components/UseDevRel.vue';
+import UseFrontend from '@/Pages/Careers/components/UseFrontend.vue';
+import UseMidCore from '@/Pages/Careers/components/UseMidCore.vue';
+import UseHomeCareers from '@/Pages/Careers/UseHomeCareers.vue';
 import UseBranch from '@/Pages/Customers/CustomBlog/useBranch.vue';
 import UseDing from '@/Pages/Customers/CustomBlog/useDing.vue';
 import UseDub from '@/Pages/Customers/CustomBlog/useDub.vue';
@@ -22,6 +28,10 @@ export const routes = [
   {
     path: '/Customers',
     component: UseHomeCustomers
+  },
+  {
+    path: '/Careers',
+    component: UseHomeCareers
   },
   {
     path: '/useZapier',
@@ -54,5 +64,25 @@ export const routes = [
   {
     path: '/useTexture',
     component: UseTexture
+  },
+  {
+    path: '/useMidCore',
+    component: UseMidCore
+  },
+  {
+    path: '/useCore',
+    component: UseCore
+  },
+  {
+    path: '/useFrontend',
+    component: UseFrontend
+  },
+  {
+    path: '/useCloudSRE',
+    component: UseCloudSRE
+  },
+  {
+    path: '/useDevRel',
+    component: UseDevRel
   }
 ];

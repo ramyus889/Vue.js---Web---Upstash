@@ -5,14 +5,14 @@ const adaptive =
   'min-[2300px]:mx-[570px] min-[2250px]:mx-[600px] min-[2125px]:mx-[550px] min-[2050px]:mx-[500px] min-[1920px]:mx-[450px] min-[1850px]:mx-[350px] min-[1750px]:mx-[250px] min-[1450px]:mx-[200px] min-[1330px]:mx-[150px] xl:mx-[100px]';
 </script>
 <template>
-  <div :class="adaptive" class="border-white/5 border-b">
+  <div :class="adaptive" class="border-white/5 border-b px-5">
     <RouterLink
       class="text-white opacity-40 hover:opacity-80 py-4 w-full inline-flex"
       to="/Customers"
       >← Back to Customers</RouterLink
     >
   </div>
-  <div class="flex place-content-center mt-[90px]">
+  <div class="flex place-content-center mt-[90px] px-5">
     <div class="">
       <img src="/Customers/texture2.webp" alt="" class="w-[1000px] rounded-xl" />
       <div class="flex flex-col mt-20 max-w-[688px] mx-auto">

@@ -4,7 +4,7 @@ import UseMainPricing from './UseMainPricing.vue';
 import UseContact from './componentsPricing/UseContact.vue';
 </script>
 <template>
-  <div class="">
+  <div class="px-5">
     <UseMainPricing />
     <UseContact />
     <UseFooter />

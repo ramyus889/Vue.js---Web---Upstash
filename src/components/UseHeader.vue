@@ -20,7 +20,7 @@ const items = [
   {
     id: 4,
     name: 'About',
-    link: '/About'
+    link: '#'
   },
   {
     id: 5,

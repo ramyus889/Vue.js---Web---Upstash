@@ -9,7 +9,7 @@ import UseTestSpeed from './UseTestSpeed.vue';
 import UseThreeCard from './UseThreeCard.vue';
 </script>
 <template>
-  <div class="">
+  <div class="px-5">
     <UseMain />
     <UseLogoTeams />
     <UseTestSpeed />
