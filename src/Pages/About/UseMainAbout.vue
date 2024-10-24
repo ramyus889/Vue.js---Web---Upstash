@@ -196,7 +196,7 @@ const itemsInvest = [
           already using the products they helped to create.
         </div>
         <div
-          class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-[40px] md:mt-24 mt-12 max-w-[800px] mx-auto"
+          class="grid md:grid-cols-3 gap-[40px] sm:grid-cols-2 grid-cols-1 md:mt-24 mt-12 max-w-[800px] mx-auto"
         >
           <a
             :href="item.link"
