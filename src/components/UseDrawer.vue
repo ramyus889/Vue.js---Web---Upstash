@@ -48,11 +48,6 @@ const items = [
     id: 4,
     name: 'About',
     link: '/About'
-  },
-  {
-    id: 5,
-    name: 'Support',
-    link: '#'
   }
 ];
 </script>
