@@ -2,13 +2,13 @@
 const items = [
   {
     id: 1,
-    title: 'Blog',
+    title: 'Customers',
     image: '/blog.svg',
     text: 'Read the latest news and product updates from the Upstash Blog.',
     buttonText: 'Read',
     delay: 100,
     rounded: 'xl:rounded-l-3xl rounded-lg',
-    link: '#'
+    link: '/Customers'
   },
   {
     id: 2,

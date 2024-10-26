@@ -7,6 +7,7 @@ const items = [
     textColor: 'text-[#FCA5A5]',
     bgColor: 'bg-[#FCA5A5]',
     delay: 100,
+    link: 'https://github.com/upstash/examples/tree/main/examples',
     descriptions1: 'Durable and fast with multi tier storage.',
     descriptions2: 'Fast anywhere with global replication.',
     descriptions3: 'Designed for Edge/Serverless with REST API.'
@@ -18,6 +19,7 @@ const items = [
     textColor: 'text-[#FDBA74]',
     bgColor: 'bg-[#FDBA74]',
     delay: 200,
+    link: 'https://drive.google.com/drive/u/1/folders/1_W7MgkKGJmbfVQ_QiW_6qcfq0JZYFnhw',
     descriptions1: 'Serverless, price scales to zero',
     descriptions2: 'Optimized for vector search',
     descriptions3: 'Scales up to billion vectors'
@@ -29,6 +31,7 @@ const items = [
     textColor: 'text-[#D8B4FE]',
     bgColor: 'bg-[#D8B4FE]',
     delay: 300,
+    link: 'https://github.com/upstash/examples/tree/main/examples',
     descriptions1: 'Serverless, HTTP based messaging',
     descriptions2: 'Scheduling via CRON',
     descriptions3: 'At-least-once delivery with auto retries'
@@ -75,12 +78,14 @@ const items = [
               >
                 Docs <span><img src="/arrowRightTop.svg" class="" alt="" /></span>
               </button>
-              <button
+              <a
+                :href="item.link"
+                target="_blank"
                 :class="`hover:${item.bgColor}`"
-                class="flex justify-between px-[20px] py-[9px] items-center rounded-full w-full bg-white/5"
+                class="flex place-content-center px-[20px] py-[9px] items-center rounded-full w-full bg-white/5"
               >
                 Examples
-              </button>
+              </a>
             </div>
           </div>
         </div>
