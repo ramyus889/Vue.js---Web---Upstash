@@ -1,3 +1,11 @@
+<script>
+export default {
+  name: 'UseHomeAbout',
+  mounted() {
+    document.title = 'Vue Upstach | About';
+  }
+};
+</script>
 <script setup>
 import UseFooter from '@/components/UseFooter.vue';
 import UseMainAbout from './UseMainAbout.vue';

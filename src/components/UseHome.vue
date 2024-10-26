@@ -1,3 +1,11 @@
+<script>
+export default {
+  name: 'UseHome',
+  mounted() {
+    document.title = 'Vue Upstach';
+  }
+};
+</script>
 <script setup>
 import UseCommunity from './UseCommunity.vue';
 import UseEdge from './UseEdge.vue';
