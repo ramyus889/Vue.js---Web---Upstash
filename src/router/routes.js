@@ -17,77 +17,134 @@ import UseZapier from '@/Pages/Customers/CustomBlog/useZapier.vue';
 import UseHomeCustomers from '@/Pages/Customers/UseHomeCustomers.vue';
 import UseHomePricing from '@/Pages/Pricing/UseHomePricing.vue';
 
+export const routeUrl = [
+  {
+    path: '/'
+  },
+  {
+    path: '/Pricing'
+  },
+  {
+    path: '/Customers'
+  },
+  {
+    path: '/Careers'
+  },
+  {
+    path: '/About'
+  },
+  {
+    path: '/useZapier'
+  },
+  {
+    path: '/useBranch'
+  },
+  {
+    path: '/useDing'
+  },
+  {
+    path: '/useMaker'
+  },
+  {
+    path: '/useDub'
+  },
+  {
+    path: '/useNiftyKit'
+  },
+  {
+    path: '/useSweet'
+  },
+  {
+    path: '/useTexture'
+  },
+  {
+    path: '/useMidCore'
+  },
+  {
+    path: '/useCore'
+  },
+  {
+    path: '/useFrontend'
+  },
+  {
+    path: '/useCloudSRE'
+  },
+  {
+    path: '/useDevRel'
+  }
+];
+
 export const routes = [
   {
-    path: '/',
+    path: `${routeUrl[0].path}`,
     component: UseHome
   },
   {
-    path: '/Pricing',
+    path: `${routeUrl[1].path}`,
     component: UseHomePricing
   },
   {
-    path: '/Customers',
+    path: `${routeUrl[2].path}`,
     component: UseHomeCustomers
   },
   {
-    path: '/Careers',
+    path: `${routeUrl[3].path}`,
     component: UseHomeCareers
   },
   {
-    path: '/About',
+    path: `${routeUrl[4].path}`,
     component: UseHomeAbout
   },
   {
-    path: '/useZapier',
+    path: `${routeUrl[5].path}`,
     component: UseZapier
   },
   {
-    path: '/useBranch',
+    path: `${routeUrl[6].path}`,
     component: UseBranch
   },
   {
-    path: '/useDing',
+    path: `${routeUrl[7].path}`,
     component: UseDing
   },
   {
-    path: '/useMaker',
+    path: `${routeUrl[8].path}`,
     component: UseMaker
   },
   {
-    path: '/useDub',
+    path: `${routeUrl[9].path}`,
     component: UseDub
   },
   {
-    path: '/useNiftyKit',
+    path: `${routeUrl[10].path}`,
     component: UseNiftyKit
   },
   {
-    path: '/useSweet',
+    path: `${routeUrl[11].path}`,
     component: UseSweet
   },
   {
-    path: '/useTexture',
+    path: `${routeUrl[12].path}`,
     component: UseTexture
   },
   {
-    path: '/useMidCore',
+    path: `${routeUrl[13].path}`,
     component: UseMidCore
   },
   {
-    path: '/useCore',
+    path: `${routeUrl[14].path}`,
     component: UseCore
   },
   {
-    path: '/useFrontend',
+    path: `${routeUrl[15].path}`,
     component: UseFrontend
   },
   {
-    path: '/useCloudSRE',
+    path: `${routeUrl[16].path}`,
     component: UseCloudSRE
   },
   {
-    path: '/useDevRel',
+    path: `${routeUrl[17].path}`,
     component: UseDevRel
   }
 ];

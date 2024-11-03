@@ -1,4 +1,6 @@
 <script setup>
+import { routeUrl } from '@/router/routes';
+
 const items = [
   {
     id: 1,
@@ -8,7 +10,7 @@ const items = [
     buttonText: 'Read',
     delay: 100,
     rounded: 'xl:rounded-l-3xl rounded-lg',
-    link: '/Customers'
+    link: `${routeUrl[2].path}`
   },
   {
     id: 2,

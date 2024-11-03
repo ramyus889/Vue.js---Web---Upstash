@@ -1,26 +1,27 @@
 <script setup>
+import { routeUrl } from '@/router/routes';
 import UseDrawer from './UseDrawer.vue';
 
 const items = [
   {
     id: 1,
     name: 'Pricing',
-    link: '/Pricing'
+    link: `${routeUrl[1].path}`
   },
   {
     id: 2,
     name: 'Customers',
-    link: '/Customers'
+    link: `${routeUrl[2].path}`
   },
   {
     id: 3,
     name: 'Careers',
-    link: '/Careers'
+    link: `${routeUrl[3].path}`
   },
   {
     id: 4,
     name: 'About',
-    link: '/About'
+    link: `${routeUrl[4].path}`
   }
 ];
 
@@ -34,9 +35,9 @@ const adaptive =
       class="flex justify-between items-center px-5 py-[25px] border-b-white/5"
     >
       <div class="">
-        <RouterLink to="/"><img src="/upstash.svg" alt="" /></RouterLink>
+        <RouterLink :to="`${routeUrl[0].path}`"><img src="/upstash.svg" alt="" /></RouterLink>
       </div>
-      <div class="md:flex hidden">
+      <div class="hidden md:flex">
         <div v-for="item in items" :key="item.id" class="">
           <RouterLink
             :to="item.link"

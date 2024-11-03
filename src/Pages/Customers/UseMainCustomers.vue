@@ -1,4 +1,6 @@
 <script setup>
+import { routeUrl } from '@/router/routes';
+
 const items = [
   {
     id: 1,
@@ -6,7 +8,7 @@ const items = [
     text: ' “ We chose Upstash specifically because it offers an HTTP interface for Redis, which perfectly suited our needs ”',
     name: 'Ben Biran',
     dev: 'Engineer Manager',
-    link: '/useZapier',
+    link: `${routeUrl[5].path}`,
     delay: 100
   },
   {
@@ -15,7 +17,7 @@ const items = [
     text: ' “ Before Upstash we used Redis Cloud. This was not serverless, you had to think about instance size, memory usage etc. which. ”',
     name: 'Adithya Reddy',
     dev: 'Software Engineering Manager',
-    link: '/useBranch',
+    link: `${routeUrl[6].path}`,
     delay: 150
   },
   {
@@ -24,7 +26,7 @@ const items = [
     text: ' “ With Upstash we minimized the our operational costs and we also felt very safe that we only pay  support we get whenever we need it. ”',
     name: 'Aymerick Valette',
     dev: 'Founding Engineer',
-    link: '/useDing',
+    link: `${routeUrl[7].path}`,
     delay: 200
   },
   {
@@ -33,7 +35,7 @@ const items = [
     text: ' “ Upstash Redis helped us combine Primary operational costs and we also felt Database and Caching Needs ”',
     name: 'Emery Denuccio',
     dev: 'Software Engineer',
-    link: '/useMaker',
+    link: `${routeUrl[8].path}`,
     delay: 250
   },
   {
@@ -42,7 +44,7 @@ const items = [
     text: '“ The Upstash JS SDK is incredibly easy to use – all I needed to do was run npm install, initialize the Redis instance, and start running redis  ”',
     name: 'Steven Tey',
     dev: 'Founder',
-    link: '/useDub',
+    link: `${routeUrl[9].path}`,
     delay: 300
   },
   {
@@ -51,7 +53,7 @@ const items = [
     text: '“ Upstash service has been bulletproof, with almost zero issues, and their support team is some of the most incredible people. ”',
     name: 'Terence Pae',
     dev: 'CTO, Cofounder',
-    link: '/useNiftyKit',
+    link: `${routeUrl[10].path}`,
     delay: 350
   },
   {
@@ -60,7 +62,7 @@ const items = [
     text: ' “ Upstash Kafka has essentially allowed us to focus more on shipping new features and provide a higher quality service ”',
     name: 'Miguel Martinez',
     dev: 'Chief Technology Officer',
-    link: '/useSweet',
+    link: `${routeUrl[11].path}`,
     delay: 400
   },
   {
@@ -69,7 +71,7 @@ const items = [
     text: ' “ We switched from Confluent to Upstash as the pricing model is much more reasonable. Better with JavaScript/TypeScript ”',
     name: 'Victor Quinn',
     dev: 'Cofounder and CTO',
-    link: '/useTexture',
+    link: `${routeUrl[12].path}`,
     delay: 450
   }
 ];
@@ -103,7 +105,7 @@ const items = [
           :data-aos-delay="item.delay"
           class="flex flex-col flex-shrink-0 gap-6 rounded-[36px] items-center group cursor-pointer border-4 h-full border-white/5 bg-gradient-to-br hover:from-[#00E9A3]/0 hover:to-[#00E9A3]/10 transition p-10 md:p-16"
         >
-          <img :src="item.image" class="h-8 max-w-full object-contain" alt="" />
+          <img :src="item.image" class="object-contain h-8 max-w-full" alt="" />
           <div class="w-1/4 border-0 border-b border-b-white/5"></div>
           <div
             class="bg-gradient-to-br from-white to-[#6DBEA6] bg-clip-text text-xl max-w-[450px] text-center font-semibold text-transparent"

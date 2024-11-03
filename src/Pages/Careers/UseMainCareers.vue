@@ -1,10 +1,12 @@
 <script setup>
+import { routeUrl } from '@/router/routes';
+
 const items = [
   {
     id: 1,
     title: 'Mid/Senior Software Engineer - Cloud/SRE',
     text: 'Build the Upstash cloud infrastructure.',
-    link: '/useMidCore',
+    link: `${routeUrl[13].path}`,
     delay: 100,
     tag: [
       {
@@ -29,7 +31,7 @@ const items = [
     id: 2,
     title: 'Software Engineer - Core',
     text: 'Build the Upstash core data platform.',
-    link: '/useCore',
+    link: `${routeUrl[14].path}`,
     delay: 150,
     tag: [
       {
@@ -58,7 +60,7 @@ const items = [
     id: 3,
     title: 'Software Engineer - Frontend',
     text: 'Build our open-source projects and talk to people',
-    link: '/useFrontend',
+    link: `${routeUrl[15].path}`,
     delay: 200,
     tag: [
       {
@@ -91,7 +93,7 @@ const items = [
     id: 4,
     title: 'Software Engineer Intern - Cloud/SRE',
     text: 'Build the Upstash cloud infrastructure.',
-    link: '/useCloudSRE',
+    link: `${routeUrl[16].path}`,
     delay: 250,
     tag: [
       {
@@ -112,7 +114,7 @@ const items = [
     id: 5,
     title: 'Mid/Senior Software Engineer - DevRel',
     text: 'Build our open-source projects and talk to people',
-    link: '/useDevRel',
+    link: `${routeUrl[17].path}`,
     delay: 300,
     tag: [
       {
@@ -169,7 +171,7 @@ const items = [
           :key="item.id"
           data-aos="fade-up"
           :data-aos-delay="item.delay"
-          class="rounded-lg bg-white/5 p-6 transition group cursor-pointer hover:bg-emerald-200/5 md:rounded-3xl md:p-8"
+          class="p-6 transition rounded-lg cursor-pointer bg-white/5 group hover:bg-emerald-200/5 md:rounded-3xl md:p-8"
         >
           <div class="font-[700] text-xl text-emerald-400 group-hover:underline">
             {{ item.title }}
@@ -179,7 +181,7 @@ const items = [
             <div
               v-for="tag in item.tag"
               :key="tag.id"
-              class="rounded bg-white/5 px-3 py-1 text-zinc-400"
+              class="px-3 py-1 rounded bg-white/5 text-zinc-400"
             >
               {{ tag.textTag }}
             </div>
